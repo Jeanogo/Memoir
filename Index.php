@@ -32,9 +32,26 @@
     height: auto; /* Pour conserver les proportions de l'image */
     display: block;
 }
-#fonnctione{
+#fonctione{
     text-align: center;
     padding: 30px;
+    
+}
+#imgba{
+    opacity: 1;
+    filter: brightness(50%) grayscale(100%);
+}
+#img6{
+    width: 1200px;
+    height: 300px;
+}
+#img2{
+    width: 1200px;
+    height: 300px;
+}
+#img3{
+    width: 1200px;
+    height: 300px;
 }
 
 
@@ -42,13 +59,43 @@
     </style>
 </head>
 <body>
-    <?php include 'header.php'; ?>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <div class="container-fluid container">
+
+    <a href="index.php"><img class="px-2"  style="width: 100px; height: 100px;" src="image/log1.png" alt="Description de l'image"></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item px-5 ">
+                    <a class="nav-link text-white  fs-5" aria-current="page" href="index.php">HOME</a>
+                </li>
+                <li class="nav-item px-3 ">
+                    <a class="nav-link text-white  fs-5" href="#">NOUS CONTACTER</a>
+                </li>
+
+                <li class="nav-item px-3">
+                    <a class="nav-link text-white  fs-5" href="#">A PROPOT DE NOUS  </a>
+                </li>
+                <li class="nav-item px-3">
+                <button class="px-5 fs-5 btn btn-info rounded " style="text-decoration:none;" ><a href="conexion.php" style="text-decoration:none;" class="text-white" >SE CONNECTER</a></button>
+                    
+                </li>
+            </ul>
+            <button class="px-5 fs-5 btn btn-info rounded " ><a href="inscription.php" style="text-decoration:none;" class="text-white" >S'INSCRIRE</a></button>
+        </div>
+    </div>
+</nav>
+
+    </header>
+    
 
 
     <section class="">
     
         <div class="image-container">
-            <img src="image/im2.jpg" class="img-fluid h-250px" alt="Image">
+            <img id="imgba" class="img-fluid" src="image/baniere.jpg" class="img-fluid h-250px" alt="Image">
 
             <div class="overlay">
                 <h2 class="fs-1">Oubliez les anciennes règles.
@@ -58,7 +105,7 @@
                      indépendants et faites avancer les choses, qu'il s'agisse d'un changement<br>
                       rapide ou d'une transformation importante.</p>
 
-                <button class="px-5 fs-5 btn btn-primary rounded"><a  style="text-decoration: none;"class="text-white" href="inscription.php">S'INSCRIRE</a></button>
+                <button class="px-5 fs-5 btn btn-success rounded"><a  style="text-decoration: none;"class="text-white" href="inscription.php">S'INSCRIRE</a></button>
             </div>
         </div>
     </section>
@@ -66,13 +113,13 @@
     
         
         
-        <!-- Autres sections de contenu -->
-        <section class="container">
-            <h2 id="fonnctione">Comment ca fonctione?</h2>
-            <div class="d-flex justify-content-center">
+    <!-- Autres sections de contenu -->
+    <section class="container ">
+        <h2 style="border-radius: 50%;" id="fonctione" class="bg-info mt-3 rounded">Comment ca fonctione?</h2>
+        <div class="d-flex justify-content-center mt-5">
 
             <div class="image-container">
-                <img src="image/im1.jpg" class="img-fluid px-4 " alt="Image">
+                <img id="img6" src="image/conne.png" class="img-fluid px-4 w-100px " alt="Image">
                 <div  class="px-4 ">
                     <h2 class="text-success">Texte sur l'image</h2>
                     <p class="text-success">Un peu de texte ici...</p>
@@ -80,7 +127,7 @@
             </div>
 
             <div class="image-container">
-                <img src="image/im2.jpg" class="img-fluid px-4" alt="Image">
+                <img id="img2" src="image/im2.jpg" class="img-fluid px-4" alt="Image">
                 <div class="px-4">
                     <h2 class="text-success">Texte sur l'image2</h2>
                     <p class="text-success">Un peu de texte ici...</p>
@@ -88,7 +135,7 @@
             </div>
 
             <div class="image-container">
-                <img src="image/im3.jpg" class="img-fluid px-4" alt="Image">
+                <img id="img3" src="image/im3.jpg" class="img-fluid px-4" alt="Image">
                 <div class="px-4">
                     <h2 class="text-success">Texte sur l'image3</h2>
                     <p class="text-success"> Un peu de texte ici...</p>

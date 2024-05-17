@@ -4,32 +4,39 @@
     <div class="footer-columns d-flex    ">
         <!-- Première colonne -->
         <div class="footer-column  px-5  mx-5" >
-            <h3>Colonne 1</h3>
+            <h3>Navigation</h3>
             <ul>
-                <li><a href="#">Lien 1</a></li>
-                <li><a href="#">Lien 2</a></li>
-                <li><a href="#">Lien 3</a></li>
+                <li><a class="text-white text-decoration-none" href="conexion.php">SE CONNECTER</a></li>
+                <li><a class="text-white text-decoration-none" href="inscription.php">S'INSCRIRE</a></li>
+                <li><a class="text-white text-decoration-none" href="index.php">HOME</a></li>
+                <li><a class="text-white text-decoration-none" href="#">A PROPOS DE NOUS</a></li>
+                <li><a class="text-white text-decoration-none" href="#">NOUS CONTACTER</a></li>
             </ul>
         </div>
         
         <!-- Deuxième colonne -->
         <div class="footer-column px-5 mx-5">
-            <h3>Colonne 2</h3>
+            <h3>Contact</h3>
             <ul>
-                <li><a href="#">Lien 4</a></li>
-                <li><a href="#">Lien 5</a></li>
-                <li><a href="#">Lien 6</a></li>
+                <li><a class="text-white text-decoration-none" href="#">FACEBOOK</a></li>
+                <li><a class="text-white text-decoration-none" href="#">INSTAGRAM</a></li>
+                <li><a class="text-white text-decoration-none" href="#">linkedin</a></li>
+                <li><a class="text-white text-decoration-none" href="#">houdji72@gmail.com</a></li>
+                <li><a class="text-white text-decoration-none" href="#">Tel:5725134</a></li>
             </ul>
         </div>
         
         <!-- Troisième colonne -->
         <div class="footer-column px-5 mx-5">
-            <h3>Colonne 3</h3>
-            <ul>
-                <li><a href="#">Lien 7</a></li>
-                <li><a href="#">Lien 8</a></li>
-                <li><a href="#">Lien 9</a></li>
-            </ul>
+        <h3 class="useful_text">S'inscrire à notre newsletter</h3>
+            <div class="col-md-4">
+                     
+                     <div class="form-group">
+                        <input type="email" class="update_mail" placeholder="Enter Your Email" rows="5" id="comment" name="Enter Your Email"></input>
+                        <button class="px-5 fs-5 btn btn-info rounded mt-3" ><a class="text-white text-decoration-none" href="#">Subscribe</a></button>
+                        
+                     </div>
+                  </div>
         </div>
     </div>
 </footer>

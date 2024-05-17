@@ -1,6 +1,4 @@
-<?php
-    include('header.php');  
-?>
+
 <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -26,35 +24,78 @@
                         box-shadow:0px 0px 10px rgba(0,0,0,0.1);
                     }
                     #h1 {
-                        
-                        display: flex;
-                        justify-content: center; /* Centrer horizontalement */
-                        align-items: center; /* Centrer verticalement */
-                         border-radius:50px;
-                         margin-top:100;
+ 
+                         border-radius: 100px;
                         }
                        #img {
-                                height: 500px;
-                                margin-top:100;
-                                width: 800px;
+                                height: 450px;
+                                margin:50px;
+                                width: 600px;
                                 border-radius: 10px;
+                                margin:px;
+                                margin-left: 140px;
+                                margin-top: -10px;
                           }
-            
+                          #lage{
+                            width:900px;
+                            margin-top: -60px;
+                          }
+                          #divglo{
+                            margin-top: 80px;
+                            height: 500px;
+                          }
+                          #form{
+                            margin: 30px;
+                            background-color:rgb(128,128,128);
+                            margin-left: 90px;
+                            height: 450px;
+                          }
+                          
+                         
                 
                 
                 </style>
             </head>
         <body>
-        
-            <div class="  px-3 d-flex "><br><br>
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
 
-                <div>
-                    <div class="mx-auto px-5" id="h1">
-                        <h1  class="dispaly-1 border text-light  bg-success px-5 mx-4 " >Formulaire d'Inscription</h1>
-                    </div> <br>
+        <div class="container-fluid container">
+
+                <a href="index.php"><img class="px-2"  style="width: 100px; height: 100px;" src="image/log1.png" alt="Description de l'image"></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between container-fluid">
+
+                <li class="nav-item px-5 list-inline-item">
+                    <a class="nav-link text-white  fs-5" aria-current="page" href="index.php">HOME</a>
+                </li>
+
+                <li class="nav-item px-4 list-inline-item">
+                    <a class="nav-link text-white  fs-5" href="#">NOUS CONTACTER</a>
+                </li>
+
+                <li class="nav-item px-4 list-inline-item">
+                    <a class="nav-link text-white  fs-5" href="#">A PROPOT DE NOUS  </a>
+                </li>
+                <button class="px-5 fs-5 btn btn-info rounded"><a  style="text-decoration: none;"class="text-white " href="inscription.php">S'INSCRIRE</a></button>
+                <button class="px-5 fs-5 btn btn-info rounded " style="text-decoration:none;" ><a href="conexion.php" style="text-decoration:none;" class="text-white" >SE CONNECTER</a></button>
+            </ul>
+            
+        </div>
+    </div>
+
+</nav>
+
+        </header>
+        <h1 class=" container text-light text-center bg-dark p-2 mt-4" >INSCRIVEZ-VOUS</h1>  
+            <div class="  px-3 d-flex" id="divglo" ><br>
+
+                <div id="lage"  >
+                    
              
                     <div class="row">
-                        <form action="#" method="POST" class=" custorm border  p-2 bg-light ">
+                        <form id="form" action="traite_inscription.php" method="POST" class=" custorm border  p-2 bg-secondary " enctype="multipart/form-data">
                             <div class="d-flex">
                                 <div class="form-group col-md-6 col-12 px-5">
                                     <label for="">Votre nom</label>
@@ -67,7 +108,7 @@
                             </div> 
                             <div class="form-row d-flex">
                                 <div class="form-group col-md-6 px-5">
-                                    <label for="">Votre adresse</label>
+                                    <label for="">Ville</label>
                                     <input type="text" name="adress" placeholder="Adresse" id="" class="form-control">
                                 </div>
                                 <div class="form-group col-md-6 px-5">
@@ -91,26 +132,31 @@
                                     <input type="password" name="mdp2" placeholder="confimer mot de passe" id="" class="form-control">
                                 </div>
                                 <div class="form-group col-md-6 px-5">
-                                    <label for="">vous êtes:</label>
-                                    <select name="mat" id=""  class="form-control">
-                                        <option value="A"></option>
-                                        <option value="A">Client</option>
-                                        <option value="">Prestataire</option>
+                                    <label for="">Vous vous inscrivez en tant que: </label>
+                                    <select name="type" id=""  class="form-control">
+                                        <option value=""></option>
+                                        <option value="Client">Client</option>
+                                        <option value="Prestataire">Prestataire</option>
                                     </select>                                       
                                 </div>
+                                
                             </div> 
-                            <div class="text-center mx-5">
-                                <input type="submit" value="Envoyer" class="btn btn-primary mx-5" name="submitt">
-                                <input type="reset" value="Annuler" class="btn btn-danger mx-5">
+                            <div class="mx-auto" style=" width: 600px;">
+                                    <label for="">Votre photo:</label> 
+                                    <input type="file" name="image" id="" class="form-control" />
                             </div>
-                        
+                            <div class="text-center mt-5">
+                                <input name="submit" type="submit" xvalue="Envoyer" class="btn btn-primary mx-5" name="submitt">
+                                <input type="reset" value="Annuler" class="btn btn-danger mx-5">
+                            </div>                       
                         </div>
                     </form> 
                 </div>
 
-                <div class=" rounded" >
-                    <img src="image/im1.jpg" class="img-fluid px-5 rounded" >
+                <div  class="col-md-6 " style="margin-top: -25px;" >
+                 <img id="img"  src="./image/inscri.jpg" alt="" class="img-fluid container" srcset="">
                 </div>
+
              </div>
 
             </div>

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-success">
     <div class="container-fluid container">
 
-        <img class="px-2"  style="width: 100px; height: 100px;" src="image/logo.png" alt="Description de l'image">
+        <img class="px-2"  style="width: 100px; height: 100px;" src="image/logo1.png" alt="Description de l'image">
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
